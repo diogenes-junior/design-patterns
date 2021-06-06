@@ -24,6 +24,7 @@ public class Program {
 			duck.display();
 			duck.quack();
 			duck.swim();
+			duck.fly();
 			System.out.println();
 		}
 
