@@ -1,22 +1,29 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import model.entities.Duck;
 import model.entities.MallardDuck;
 import model.entities.RedheadDuck;
+import model.entities.RubberDuck;
 
 public class Program {
 
 	public static void main(String[] args) {
-		Duck duck = new RedheadDuck();
-		Duck duck2 = new MallardDuck();
+		List<Duck> listDuck = new ArrayList<>();
 		
-		duck.quack();
-		duck.swim();
-		duck.display();
+		listDuck.add(new Duck());
+		listDuck.add(new MallardDuck());
+		listDuck.add(new RedheadDuck());
+		listDuck.add(new RubberDuck());
 		
-		duck2.quack();
-		duck2.swim();
-		duck2.display();
+		for(Duck duck:listDuck) {
+			duck.display();
+			duck.quack();
+			duck.swim();
+			System.out.println();
+		}
 
 	}
 

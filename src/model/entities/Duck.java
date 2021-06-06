@@ -11,6 +11,6 @@ public class Duck {
 	}
 	
 	public void display() {
-		System.out.println("display duck");
+		System.out.println("duck");
 	}
 }
