@@ -3,6 +3,7 @@ package application;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.entities.DecoyDuck;
 import model.entities.Duck;
 import model.entities.MallardDuck;
 import model.entities.RedheadDuck;
@@ -17,6 +18,7 @@ public class Program {
 		listDuck.add(new MallardDuck());
 		listDuck.add(new RedheadDuck());
 		listDuck.add(new RubberDuck());
+		listDuck.add(new DecoyDuck());
 		
 		for(Duck duck:listDuck) {
 			duck.display();
