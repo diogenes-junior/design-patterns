@@ -1,20 +1,24 @@
 package model.entities;
 
-public class Duck {
-
-	public void quack() {
-		System.out.println("quack");
+public abstract class Duck {
+	protected FlyBehavior flyBehavior;
+	protected QuackBehavior quackBehavior;
+	
+	public Duck() {
+		
+	}
+	
+	public void performQuack() {
+		quackBehavior.quack();
 	}
 	
 	public void swim() {
 		System.out.println("swim");
 	}
 	
-	public void display() {
-		System.out.println("duck");
-	}
+	public abstract void display();
 	
-	public void fly() {
-		System.out.println("fly");
+	public void performFly() {
+		flyBehavior.fly();
 	}
 }

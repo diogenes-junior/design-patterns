@@ -14,7 +14,6 @@ public class Program {
 	public static void main(String[] args) {
 		List<Duck> listDuck = new ArrayList<>();
 		
-		listDuck.add(new Duck());
 		listDuck.add(new MallardDuck());
 		listDuck.add(new RedheadDuck());
 		listDuck.add(new RubberDuck());
@@ -22,9 +21,9 @@ public class Program {
 		
 		for(Duck duck:listDuck) {
 			duck.display();
-			duck.quack();
+			duck.performQuack();
 			duck.swim();
-			duck.fly();
+			duck.performFly();
 			System.out.println();
 		}
 
